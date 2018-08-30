@@ -1,27 +1,20 @@
 <template>
     <div id="app">
-        <img src="./assets/logo.png">
         <router-view/>
     </div>
 </template>
 
 <script>
-import * as LStorage from "./utils/localStorage";
+// 引入rem文件
+import { rem } from "./utils/rem.js";
 export default {
     name: "App",
     created() {
-       
+        // 初始化时设置rem布局
+        rem();
     }
 };
 </script>
 
 <style>
-#app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
 </style>
