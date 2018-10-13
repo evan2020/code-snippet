@@ -14,6 +14,11 @@ export default new Router({
             path: '/notice',
             name: 'Notice',
             component: resolve => require(["../views/notice/notice.vue"], resolve)
+        },
+        {
+            path: '/timer',
+            name: 'timer',
+            component: resolve => require(["../views/time/timer.vue"], resolve)
         }
     ]
 })
