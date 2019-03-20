@@ -4,9 +4,12 @@
         <!-- 左侧Icon start -->
         <div class="icon"></div>
         <!-- 左侧Icon end -->
-
         <!-- 右侧文字信息 start -->
-        <div class="textCon" ref='textCon' :style="{transform:'translateY('+rollCoorY+')',transitionDuration:''+overTime+''}">
+        <div
+            class="textCon"
+            ref="textCon"
+            :style="{transform:'translateY('+rollCoorY+')',transitionDuration:''+overTime+''}"
+        >
             <div v-for="(item,index) in noticeArr" :key="index" class="text">{{item}}</div>
         </div>
         <!-- 右侧文字信息 end -->
@@ -108,7 +111,7 @@ export default {
             text-indent: 1rem;
             display: flex;
             align-items: center;
-            color:pink;
+            color: pink;
             font-size: 0.3rem;
         }
     }
