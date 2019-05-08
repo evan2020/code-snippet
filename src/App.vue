@@ -12,6 +12,8 @@ export default {
     created() {
         // 初始化时设置rem布局
         rem();
+    },
+    methods: {
     }
 };
 </script>
