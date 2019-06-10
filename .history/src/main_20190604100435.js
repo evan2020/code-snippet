@@ -4,9 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// 引入props
-// import PopperJs from 'popper.js';
-
 // 引入console
 import * as constyles from "constyles"
 Vue.prototype.$log=(...dataArr) => {
@@ -23,6 +20,7 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,

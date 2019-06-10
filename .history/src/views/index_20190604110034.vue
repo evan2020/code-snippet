@@ -11,7 +11,7 @@
     <div id="ref"
          aria-describedby="pop">
       <div class="d3"></div>
-      上海市金筛去上海市金筛去上海市金筛去上海市金筛去上海市金筛去
+      上海市金筛去
     </div>
 
   </div>
@@ -57,8 +57,7 @@ export default {
     position: absolute;
     bottom: -20px;
     right: 50%;
-    transform:translateX(10px);
-    // margin-left: -10px;
+    margin-left: -10px;
     // float: left;
     width: 0;
     height: 0;
@@ -71,13 +70,7 @@ export default {
     color: #fff;
     padding: 0px 10px;
     font-size: 16px;
-    line-height:24px;
     position: relative;
-    max-width:20em;
-    &:after{
-        content:"123";
-        color:blue;
-    }
   }
 
   /deep/ .tooltip-title {

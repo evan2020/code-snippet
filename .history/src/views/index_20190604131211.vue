@@ -71,13 +71,8 @@ export default {
     color: #fff;
     padding: 0px 10px;
     font-size: 16px;
-    line-height:24px;
     position: relative;
-    max-width:20em;
-    &:after{
-        content:"123";
-        color:blue;
-    }
+    max-width:300px;
   }
 
   /deep/ .tooltip-title {

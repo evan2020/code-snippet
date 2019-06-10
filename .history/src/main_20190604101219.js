@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 // 引入props
-// import PopperJs from 'popper.js';
+import PopperJs from 'popper.js';
 
 // 引入console
 import * as constyles from "constyles"

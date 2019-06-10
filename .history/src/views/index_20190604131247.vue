@@ -74,10 +74,6 @@ export default {
     line-height:24px;
     position: relative;
     max-width:20em;
-    &:after{
-        content:"123";
-        color:blue;
-    }
   }
 
   /deep/ .tooltip-title {
