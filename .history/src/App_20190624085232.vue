@@ -14,7 +14,7 @@ export default {
   created () {
     // 初始化时设置rem布局
     rem();
-    let showNum=dealNumber(12000)
+    let showNum=dealNumber(1000)
     console.log("货币化数字",showNum)
   },
   methods: {

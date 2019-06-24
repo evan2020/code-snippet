@@ -7,15 +7,14 @@
 <script>
 // 引入rem文件
 import { rem } from "./utils/rem.js";
-// 引入数字三位数货币化
-import {dealNumber} from "./utils/currency"
+// 引入浏览器检测
+// import {getBrowserInfo} from "./utils/checkBro"
 export default {
   name: "App",
   created () {
     // 初始化时设置rem布局
     rem();
-    let showNum=dealNumber(12000)
-    console.log("货币化数字",showNum)
+    getBrowserInfo()
   },
   methods: {
     test (...data) {
