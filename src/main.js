@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// 引入props
-// import PopperJs from 'popper.js';
+// 引入echarts
+let echarts = require('echarts');
+// 设置全局echart
+Vue.prototype.$echarts = echarts
 
 // 引入console
 import * as constyles from "constyles"
