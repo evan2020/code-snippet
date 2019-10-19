@@ -1,15 +1,16 @@
 <template>
     <div id="app">
-        <router-view/>
+        <router-view />
     </div>
 </template>
 
 <script>
 // 引入rem文件
-import { rem } from "./utils/rem.js";
-// 导入console
-import {Console} from './utils/console.js'
+import { rem } from './utils/rem.js'
+// 引入数字三位数货币化
+import { dealNumber } from './utils/currency'
 export default {
+<<<<<<< HEAD
     name: "App",
     created() {
         // 初始化时设置rem布局
@@ -20,6 +21,15 @@ export default {
     methods: {
     }
 };
+=======
+	name: 'App',
+	created() {
+		// 初始化时设置rem布局
+		rem()
+	},
+	methods: {}
+}
+>>>>>>> 8e322ee0f8ec032432dd3f2ba698027c34eefcab
 </script>
 
 <style>

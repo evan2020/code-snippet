@@ -25,6 +25,11 @@ export default new Router({
             path: "/input",
             name: "input",
             component: resolve => require(["../views/input/index"], resolve)
-        }
+        },
+        {
+            path: "/coupon",
+            name: "coupon",
+            component: resolve => require(["../views/coupon/index"], resolve)
+        },
     ]
 });
