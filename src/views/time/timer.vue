@@ -13,6 +13,7 @@ export default {
     created() {
         // 使用定时函数
         timer(3, 1000, this.test, this.end);
+        console.log(`test`)
     },
     methods: {
         test() {
