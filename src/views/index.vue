@@ -18,7 +18,7 @@ export default {
     },
     data() {
         return {
-            value: 0,
+            value: 1,
             interval:1,
             tooltip:"none"
         };
