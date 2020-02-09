@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .inputPage {
     width: 100vw;
     font-size: 0.3rem;

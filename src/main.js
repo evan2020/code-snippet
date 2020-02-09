@@ -4,6 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
+
 // 引入echarts
 let echarts = require('echarts');
 // 设置全局echart
@@ -17,6 +22,11 @@ Vue.prototype.$log=(...dataArr) => {
 Vue.prototype.$logStyle=(...dataArr) => {
   return constyles.init(true,`logStyle`, dataArr)
 }
+
+import VueSlider from 'vue-slider-component'
+import 'vue-slider-component/theme/default.css'
+
+Vue.component('VueSlider', VueSlider)
 
 // 引入element-ui
 import ElementUI from 'element-ui';
