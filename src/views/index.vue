@@ -8,7 +8,7 @@
 export default {
     name: "index",
     components: {
-        VueSlider
+        // VueSlider
     },
     data() {
         return {
