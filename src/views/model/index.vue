@@ -11,7 +11,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .model {
     width: 100vw;
     font-size: 0.3rem;
