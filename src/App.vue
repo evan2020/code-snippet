@@ -12,6 +12,7 @@ import { dealNumber } from './utils/currency'
 export default {
 	name: 'App',
 	created() {
+        console.log("git flow")
 		// 初始化时设置rem布局
 		rem()
 	},
