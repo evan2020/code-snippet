@@ -6,6 +6,20 @@
 
 <script>
 export default {
+<<<<<<< HEAD
+	name: 'index',
+	data() {
+		return {}
+	},
+	created() {
+		console.log(`初始化主页`)
+		this.$router.push({
+			name: `coupon`
+		})
+	},
+	mounted() {}
+}
+=======
     name: "index",
     components: {
         VueSlider
@@ -36,6 +50,7 @@ export default {
     },
     mounted() {}
 };
+>>>>>>> dev
 </script>
 
 <style lang="scss" scoped>
