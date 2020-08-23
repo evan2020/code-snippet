@@ -25,6 +25,15 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
+// import Vue from "vue";
+import * as Sentry from "@sentry/browser";
+import { Vue as VueIntegration } from "@sentry/integrations";
+
+Sentry.init({
+  dsn: "http://b34a0ccbec8f406cabc950246290512b@dsx2016fe.mynatapp.cc//2",
+  integrations: [new VueIntegration({ Vue, attachProps: true })],
+});
+
 new Vue({
   el: '#app',
   router,

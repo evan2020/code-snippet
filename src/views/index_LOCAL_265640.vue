@@ -11,7 +11,7 @@ export default {
 		return {}
 	},
 	created() {
-		console.log(`初始化主页`)
+		console.log(`初始化主页3`)
 		this.$router.push({
 			name: `coupon`
 		})

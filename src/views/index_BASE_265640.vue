@@ -24,7 +24,7 @@ export default {
         };
     },
     created() {
-        console.log(`初始化主页`);
+        console.log(`初始化主页4`);
         // this.$router.push({
         //     name: `coupon`
         // });

@@ -15,7 +15,8 @@ export default {
 	created() {
         console.log("git flow")
 		// 初始化时设置rem布局
-		rem()
+        rem()
+        
 	},
 	methods: {}
 }
