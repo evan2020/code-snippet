@@ -1,0 +1,7 @@
+[auth]  
+token=f0a0ee24d2cd4b2eade96280e1698762c5df9bac87ea4223a6dbe3090f3a3a72
+
+[defaults]
+url = https://dsx2016fe.mynatapp.cc/
+project=vue
+org=sentry

@@ -27,12 +27,16 @@ Vue.config.productionTip = false
 
 // import Vue from "vue";
 import * as Sentry from "@sentry/browser";
+import { Integrations } from "@sentry/tracing";
 import { Vue as VueIntegration } from "@sentry/integrations";
 
 Sentry.init({
   dsn: "http://b34a0ccbec8f406cabc950246290512b@dsx2016fe.mynatapp.cc//2",
-  integrations: [new VueIntegration({ Vue, attachProps: true })],
+  release:"v1.0.1",
+  integrations: [new VueIntegration({ Vue, attachProps: true ,logErrors: true}),new Integrations.BrowserTracing()],
+  tracesSampleRate: 1.0, // Be sure to lower this in production
 });
+
 
 new Vue({
   el: '#app',

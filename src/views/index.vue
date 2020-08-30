@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import * as Sentry from "@sentry/browser";
 export default {
     name: "index",
     components: {
@@ -13,8 +14,8 @@ export default {
     data() {
         return {
             value: 2,
-            interval:1,
-            tooltip:"none"
+            interval: 1,
+            tooltip: "none"
         };
     },
     created() {
@@ -23,17 +24,24 @@ export default {
         //     name: `coupon`
         // });
 
-        // this.test()
-        // console.log(a)
+        Sentry.captureMessage("Something went wrong");
+
+        
+
+        // Sentry.configureScope(function(scope) {
+        //     scope.setTag("page.locale", "de-at");
+        // });
+
+        // this.test();
+        // console.log(a);
     },
-    watch:{
-        value:function(newVal){
-            if(newVal>50){
-                Toast('最大可借额度5000元');
-                setTimeout(()=>{
-                    this.value=50
-                },500)
-                
+    watch: {
+        value: function(newVal) {
+            if (newVal > 50) {
+                Toast("最大可借额度5000元");
+                setTimeout(() => {
+                    this.value = 50;
+                }, 500);
             }
         }
     },
@@ -41,14 +49,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .index {
-	width: 100vw;
-	height: 100vh;
-	font-size: 0.3rem;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 </style>

@@ -91,7 +91,7 @@ export default {
     }
 };
 </script>
-<style lang='scss' scoped>
+<style lang='less' scoped>
 .notice {
     width: 6.9rem;
     height: 0.7rem;

@@ -6,6 +6,7 @@
             <div class="left"></div>
             <div class="right"></div>
         </div>
+        <!-- <com-test></com-test> -->
         <!-- <div class="wrap">
             <div class="couponTest">
                 <div class="coupon-left"></div>
@@ -20,12 +21,17 @@
 export default {
     name: "coupon",
     data() {
-        return {};
+        return {
+            
+        };
+    },
+    created(){
+       console.log(eee)
     }
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .coupon {
     width: 100vw;
     font-size: 0.3rem;
