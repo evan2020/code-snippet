@@ -124,11 +124,12 @@ const webpackConfig = merge(baseWebpackConfig, {
             ignore: ['.*']
         }]),
         new SentryWebpackPlugin({
-            release:"v1.0.1",
+            release:"v1.0.5",
             include: ".",
             ignoreFile: ".sentrycliignore",
             ignore: ["node_modules", "webpack.config.js"],
             configFile: "sentry.properties",
+            urlPrefix:"~/static/js"
         }),
     ]
 })

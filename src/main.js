@@ -31,8 +31,8 @@ import { Integrations } from "@sentry/tracing";
 import { Vue as VueIntegration } from "@sentry/integrations";
 
 Sentry.init({
-  dsn: "http://b34a0ccbec8f406cabc950246290512b@dsx2016fe.mynatapp.cc//2",
-  release:"v1.0.1",
+  dsn: "http://b34a0ccbec8f406cabc950246290512b@dsx2025.mynatapp.cc//2",
+  release:"v1.0.5",
   integrations: [new VueIntegration({ Vue, attachProps: true ,logErrors: true}),new Integrations.BrowserTracing()],
   tracesSampleRate: 1.0, // Be sure to lower this in production
 });

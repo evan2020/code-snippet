@@ -24,7 +24,7 @@ export default {
         //     name: `coupon`
         // });
 
-        Sentry.captureMessage("Something went wrong");
+        Sentry.captureMessage("Something went wrong test v1.0.5");
 
         
 

@@ -72,13 +72,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             to: config.dev.assetsSubDirectory,
             ignore: ['.*']
         }]),
-        new SentryWebpackPlugin({
-            release:"v1.0.1",
-            include: ".",
-            ignoreFile: ".sentrycliignore",
-            ignore: ["node_modules", "webpack.config.js"],
-            configFile: "sentry.properties",
-        }),
+        // new SentryWebpackPlugin({
+        //     release:"v1.0.5",
+        //     include: ".",
+        //     ignoreFile: ".sentrycliignore",
+        //     ignore: ["node_modules", "webpack.config.js"],
+        //     configFile: "sentry.properties",
+        // }),
     ]
 })
 
